@@ -6,7 +6,12 @@ namespace deckOfCards
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Deck newDeck = new Deck();
+            newDeck.shuffle();
+            newDeck.reset();
+            Player joanna = new Player();
+            joanna.draw(newDeck);
+            System.Console.WriteLine("Hello World");
         }
     }
 }
